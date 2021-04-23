@@ -23,14 +23,15 @@ module.exports = (app) => {
     });
 
     // Delete a note from the database
-    app.delete("/api/notes", (req, res) => {
+    app.delete("/api/notes/:id", (req, res) => {
         const notes = JSON.parse(fs.readFileSync(path.join(__dirname, "../db/db.json"), 'utf8'))
-        
-        const delNote = { ...req.body, id };
-        notes.push(newNote);
-        fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(notes), (error) => {
+        var id = req.params.id;
+        // console.log(id);
+        const delNote = notes.filter(note => note.id != id);
+        // console.log(delNote);
+        fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(delNote), (error) => {
             if (error) console.log(error);
         });
-        res.json(newNote);
-    });s
+        res.json(JSON.parse(notes));
+    });
 };
