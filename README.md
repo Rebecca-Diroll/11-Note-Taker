@@ -18,6 +18,9 @@ CSS
 ## GitHub
 GitHub Repository: https://github.com/Rebecca-Diroll/11-Note-Taker
 
+## Heroku
+Heroku Deployment: https://rdd-note-taker.herokuapp.com/
+
 ## Images
 Home Page
 ![Note Taker Home Page](/assets/landing-page.jpg)
