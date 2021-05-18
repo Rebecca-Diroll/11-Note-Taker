@@ -9,7 +9,8 @@ Keep on top of your To Do List using this note taker app.
 This application is used to create a list of notes. Each note contains a title and a text section. New notes can be added and old notes can be deleted. Current notes are displayed and stored.
 
 ## Technology
-* Express.js
+* JavaScript
+* ExpressJS
 * Inquirer
 * JSON
 * HTML
