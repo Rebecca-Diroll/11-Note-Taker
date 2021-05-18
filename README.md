@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## User Story
-Keep on top of your To Do List using this note taker app.
+Keep on top of your to do list using this Note Taker app.
 
 ## Usage
 This application is used to create a list of notes. Each note contains a title and a text section. New notes can be added and old notes can be deleted. Current notes are displayed and stored.
